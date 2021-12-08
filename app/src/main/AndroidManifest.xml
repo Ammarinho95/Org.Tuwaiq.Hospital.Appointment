@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OrgTuwaiqHospitalAppointment">
         <activity
+            android:name="signup.signupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
