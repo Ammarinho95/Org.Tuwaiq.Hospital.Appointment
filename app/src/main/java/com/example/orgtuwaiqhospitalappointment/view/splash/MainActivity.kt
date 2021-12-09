@@ -1,4 +1,4 @@
-package com.example.orgtuwaiqhospitalappointment.view.login
+package com.example.orgtuwaiqhospitalappointment.view.splash
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
