@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OrgTuwaiqHospitalAppointment">
         <activity
+            android:name=".view.clinicNames.ClinicNamesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.row.rowActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.BookAppointment.BookAppointmentActivity"
             android:exported="false" />
         <activity
