@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/rounded_button.xml" value="0.175" />
-        <entry key="app/src/main/res/layout/activity_book_appointment.xml" value="0.22013887733191162" />
+        <entry key="app/src/main/res/layout/activity_book_appointment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.24563240537069117" />
         <entry key="app/src/main/res/layout/activity_log_in_page.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.24814814814814815" />

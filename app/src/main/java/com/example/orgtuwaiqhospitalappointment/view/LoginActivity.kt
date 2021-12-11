@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import com.example.orgtuwaiqhospitalappointment.R
 import com.example.orgtuwaiqhospitalappointment.view.Home.HomeActivity
+import com.example.orgtuwaiqhospitalappointment.view.signup.SignUpActivity
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +14,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_log_in_page)
 
         Handler().postDelayed({
-            var i= Intent(this,HomeActivity::class.java)
+            var i= Intent(this,SignUpActivity::class.java)
             startActivity(i)
 
         },3000)
