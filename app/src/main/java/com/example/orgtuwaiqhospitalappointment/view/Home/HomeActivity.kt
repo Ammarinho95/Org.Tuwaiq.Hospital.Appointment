@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.widget.ImageView
 import com.example.orgtuwaiqhospitalappointment.R
 import com.example.orgtuwaiqhospitalappointment.view.BookAppointment.BookAppointmentActivity
 
@@ -12,11 +13,17 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        Handler().postDelayed({
-            var i= Intent(this,BookAppointmentActivity::class.java)
-            startActivity(i)
+       var bna= findViewById<ImageView>(R.id.imageViewBook)
+        var vba= findViewById<ImageView>(R.id.imageViewViewAppointment)
 
-        },3000)
 
+        bna.setOnClickListener {
+
+        }
+
+        vba.setOnClickListener {
+
+        }
     }
+
 }
