@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "371056152426",
+    "project_id": "final-project-402e5",
+    "storage_bucket": "final-project-402e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371056152426:android:e1e273fe0ca7ab52e19f13",
+        "android_client_info": {
+          "package_name": "com.example.orgtuwaiqhospitalappointment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371056152426-b35g8630f89q6igqfu7n4ac8q5dt95av.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfRHH14Z9PI6SxcZZUWgI5N4Frof8PLqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371056152426-b35g8630f89q6igqfu7n4ac8q5dt95av.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
