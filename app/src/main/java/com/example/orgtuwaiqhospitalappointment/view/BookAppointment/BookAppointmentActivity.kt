@@ -17,10 +17,12 @@ class BookAppointmentActivity : AppCompatActivity() {
 
         var inperson = findViewById<RadioButton>(R.id.radioButtonInperson)
         var virtual = findViewById<RadioButton>(R.id.radioButtonVirtual)
-        var PatientName = findViewById<TextInputEditText>(R.id.textPatientName)
-        var ClincName = findViewById<TextInputEditText>(R.id.textClincName)
-        var HealthCareCenter = findViewById<TextInputEditText>(R.id.textHealthCenter)
+        var PatientName = findViewById<TextInputEditText>(R.id.textPatientName1)
+        var ClincName = findViewById<TextInputEditText>(R.id.textClincName1)
+        var HealthCareCenter = findViewById<TextInputEditText>(R.id.textHealthCenter1)
         var btnBook= findViewById<Button>(R.id.buttonBook)
+
+
 
 
 

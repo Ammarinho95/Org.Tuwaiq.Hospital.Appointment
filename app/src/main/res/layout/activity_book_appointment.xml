@@ -50,6 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/radioButtonInperson">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textPatientName1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Patient Name"
@@ -69,6 +70,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textPatientName">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textClincName1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Clinc Name" />
@@ -87,6 +89,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textClincName">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textHealthCenter1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Healthcare Center" />

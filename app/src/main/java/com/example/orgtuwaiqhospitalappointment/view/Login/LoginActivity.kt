@@ -23,13 +23,6 @@ class LoginActivity : AppCompatActivity() {
         var blogin = findViewById<Button>(R.id.buttonLogin)
         var newUser = findViewById<TextView>(R.id.textViewSignup)
 
-        Handler().postDelayed({
-            var i = Intent(this, SignUpActivity::class.java)
-            startActivity(i)
-
-        }, 3000)
-
-
 
 
         blogin.setOnClickListener {
@@ -51,6 +44,7 @@ class LoginActivity : AppCompatActivity() {
 
             var i = Intent(this, SignUpActivity::class.java)
             startActivity(i)
+
 
         }
 
