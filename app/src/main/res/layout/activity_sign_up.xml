@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputEmail"
+        android:id="@+id/inputEmail2"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -35,13 +35,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewSignUp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEmail1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputPassword"
+        android:id="@+id/inputPassword2"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -50,9 +51,10 @@
         app:boxBackgroundColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputEmail">
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail2">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPassword1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password" />
@@ -68,16 +70,17 @@
         app:boxBackgroundColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword">
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword2">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/InputFullName3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Full Name" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputPhone"
+        android:id="@+id/inputPhone2"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -89,6 +92,7 @@
         app:layout_constraintTop_toBottomOf="@+id/InputFullName">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Phone" />
@@ -105,7 +109,7 @@
         android:text="Sign Up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/inputPhone2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

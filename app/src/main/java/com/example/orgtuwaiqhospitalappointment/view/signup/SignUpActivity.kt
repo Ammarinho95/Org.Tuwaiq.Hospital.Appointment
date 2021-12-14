@@ -1,12 +1,9 @@
 package com.example.orgtuwaiqhospitalappointment.view.signup
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.widget.Button
 import com.example.orgtuwaiqhospitalappointment.R
-import com.example.orgtuwaiqhospitalappointment.view.Home.HomeActivity
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
@@ -17,8 +14,8 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
-        var email = findViewById<TextInputEditText>(R.id.inputEmail)
-        var password = findViewById<TextInputEditText>(R.id.inputPassword)
+        var email = findViewById<TextInputEditText>(R.id.inputEmail1)
+        var password = findViewById<TextInputEditText>(R.id.inputPassword1)
         var fname = findViewById<TextInputEditText>(R.id.InputFullName)
         var phone = findViewById<TextInputEditText>(R.id.inputPhone)
         var btnsignup = findViewById<Button>(R.id.buttonsignUp)

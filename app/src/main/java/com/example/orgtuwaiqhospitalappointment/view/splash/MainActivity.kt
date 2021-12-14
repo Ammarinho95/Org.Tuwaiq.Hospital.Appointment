@@ -16,6 +16,6 @@ class MainActivity : AppCompatActivity() {
             var i= Intent(this, LoginActivity::class.java)
             startActivity(i)
 
-        },10000)
+        },3000)
     }
 }

@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewAppointmentType" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputPatientName"
+        android:id="@+id/textPatientName"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -57,7 +57,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputClincName"
+        android:id="@+id/textClincName"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -66,7 +66,7 @@
         app:boxBackgroundColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputPatientName">
+        app:layout_constraintTop_toBottomOf="@+id/textPatientName">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -75,7 +75,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputHealthCenter"
+        android:id="@+id/textHealthCenter"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -84,7 +84,7 @@
         app:boxBackgroundColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputClincName">
+        app:layout_constraintTop_toBottomOf="@+id/textClincName">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -102,6 +102,6 @@
         android:text="Book"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputHealthCenter" />
+        app:layout_constraintTop_toBottomOf="@+id/textHealthCenter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
