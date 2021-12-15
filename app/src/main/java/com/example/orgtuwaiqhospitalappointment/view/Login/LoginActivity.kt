@@ -8,6 +8,8 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import com.example.orgtuwaiqhospitalappointment.R
+import com.example.orgtuwaiqhospitalappointment.view.BookAppointment.BookAppointmentActivity
+import com.example.orgtuwaiqhospitalappointment.view.Home.HomeActivity
 import com.example.orgtuwaiqhospitalappointment.view.signup.SignUpActivity
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.ktx.auth
@@ -23,7 +25,11 @@ class LoginActivity : AppCompatActivity() {
         var blogin = findViewById<Button>(R.id.buttonLogin)
         var newUser = findViewById<TextView>(R.id.textViewSignup)
 
+        Handler().postDelayed({
+            var i = Intent(this, BookAppointmentActivity::class.java)
+            startActivity(i)
 
+        }, 3000)
 
         blogin.setOnClickListener {
 
