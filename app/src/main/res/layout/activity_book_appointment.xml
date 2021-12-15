@@ -76,35 +76,49 @@
             android:hint="Clinc Name" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textHealthCenter"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="1dp"
-        app:boxBackgroundColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textClincName">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textHealthCenter1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Healthcare Center" />
-    </com.google.android.material.textfield.TextInputLayout>
-
     <Button
         android:id="@+id/buttonBook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="16dp"
         android:text="Book"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textHealthCenter" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCalender" />
+
+    <ImageView
+        android:id="@+id/imageViewCalender"
+        android:layout_width="57dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewPickdate"
+        app:layout_constraintTop_toBottomOf="@+id/textClincName"
+        app:srcCompat="@drawable/business_schedule_workdays_work_days_calendar_briefcase_icon_188771" />
+
+    <TextView
+        android:id="@+id/textViewPickdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="7dp"
+        android:text="Select Date"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textClincName" />
+
+    <TextView
+        android:id="@+id/textViewshowDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:text="selected Date"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCalender"
+        app:layout_constraintTop_toBottomOf="@+id/textClincName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
