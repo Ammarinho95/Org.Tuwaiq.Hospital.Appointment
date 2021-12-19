@@ -16,14 +16,9 @@ class HomeActivity : AppCompatActivity() {
        var bna= findViewById<ImageView>(R.id.imageViewBook)
         var vba= findViewById<ImageView>(R.id.imageViewViewAppointment)
 
-
         bna.setOnClickListener {
-
-        }
-
-        vba.setOnClickListener {
-
+            var i = Intent(this,BookAppointmentActivity::class.java)
+            startActivity(i)
         }
     }
-
 }

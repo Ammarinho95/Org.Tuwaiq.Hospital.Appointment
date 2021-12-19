@@ -3,12 +3,10 @@ package com.example.orgtuwaiqhospitalappointment.view.Login
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import com.example.orgtuwaiqhospitalappointment.R
-import com.example.orgtuwaiqhospitalappointment.view.BookAppointment.BookAppointmentActivity
 import com.example.orgtuwaiqhospitalappointment.view.Home.HomeActivity
 import com.example.orgtuwaiqhospitalappointment.view.signup.SignUpActivity
 import com.google.android.material.textfield.TextInputEditText
@@ -20,16 +18,12 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in_page)
 
-        var email = findViewById<TextInputEditText>(R.id.textInputEmail)
-        var password = findViewById<TextInputEditText>(R.id.textInputPassword)
+        var email = findViewById<TextInputEditText>(R.id.textInputEmail1)
+        var password = findViewById<TextInputEditText>(R.id.textInputPassword1)
         var blogin = findViewById<Button>(R.id.buttonLogin)
         var newUser = findViewById<TextView>(R.id.textViewSignup)
 
-        Handler().postDelayed({
-            var i = Intent(this, BookAppointmentActivity::class.java)
-            startActivity(i)
 
-        }, 3000)
 
         blogin.setOnClickListener {
 
@@ -39,9 +33,18 @@ class LoginActivity : AppCompatActivity() {
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         var user = auth.currentUser
-                        Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "Login success", Toast.LENGTH_SHORT).show()
 
+                        var i = Intent(this, HomeActivity::class.java)
+                        startActivity(i)
+
+                    } else {
+                        println("failed")
                     }
+
+                }
+                .addOnFailureListener {
+
                 }
 
         }

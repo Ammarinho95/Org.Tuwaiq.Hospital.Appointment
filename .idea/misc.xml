@@ -5,7 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/rounded_button.xml" value="0.175" />
         <entry key="app/src/main/res/layout/activity_appointment_details.xml" value="0.24660537870845073" />
-        <entry key="app/src/main/res/layout/activity_book_appointment.xml" value="0.22676579925650558" />
+        <entry key="app/src/main/res/layout/activity_book_appointment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_clinic_names.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/activity_health_care_center.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.24563240537069117" />
