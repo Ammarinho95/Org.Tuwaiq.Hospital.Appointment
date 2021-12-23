@@ -13,11 +13,18 @@ import com.example.orgtuwaiqhospitalappointment.R
 import com.example.orgtuwaiqhospitalappointment.view.row.rowActivity
 import com.google.android.material.textfield.TextInputEditText
 import java.util.*
+import android.widget.RadioGroup
+
+
+
 
 class BookAppointmentActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_book_appointment)
+
+
 
         var inperson = findViewById<RadioButton>(R.id.radioButtonInperson)
         var virtual = findViewById<RadioButton>(R.id.radioButtonVirtual)
