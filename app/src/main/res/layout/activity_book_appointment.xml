@@ -6,6 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".view.BookAppointment.BookAppointmentActivity">
 
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppointmentType">
+
+
+        <RadioButton
+            android:id="@+id/radioButtonInperson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="casual"
+            android:onClick="radio_button_clicked"
+            android:text="In Person"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAppointmentType" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVirtual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="casual"
+            android:onClick="radio_button_clicked"
+            android:text="Virtual"
+            app:layout_constraintStart_toEndOf="@+id/radioButtonInperson"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAppointmentType" />
+
+
+    </RadioGroup>
+
     <TextView
         android:id="@+id/textViewAppointmentType"
         android:layout_width="222dp"
@@ -18,38 +51,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
-    <RadioButton
-        android:id="@+id/radioButtonInperson"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:fontFamily="casual"
-        android:text="In Person"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAppointmentType" />
-
-    <RadioButton
-        android:id="@+id/radioButtonVirtual"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:fontFamily="casual"
-        android:text="Virtual"
-        app:layout_constraintStart_toEndOf="@+id/radioButtonInperson"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAppointmentType" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textPatientName"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginTop="6dp"
         app:boxBackgroundColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonInperson">
+        app:layout_constraintTop_toBottomOf="@+id/radio_group">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textPatientName1"
@@ -63,11 +72,8 @@
         android:id="@+id/textClincName"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginTop="6dp"
         app:boxBackgroundColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPatientName">
 
@@ -83,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="16dp"
         android:text="Book"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,8 +101,8 @@
         android:id="@+id/textViewPickdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
         android:text="Select Date"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/imageViewCalender"
@@ -107,7 +113,7 @@
         android:id="@+id/textViewshowDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="15dp"
         android:text=" "
         android:textSize="24sp"
@@ -118,7 +124,7 @@
         android:id="@+id/imageViewCalender"
         android:layout_width="77dp"
         android:layout_height="39dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="6dp"
         app:layout_constraintStart_toEndOf="@+id/textViewPickdate"
         app:layout_constraintTop_toBottomOf="@+id/textClincName"
         app:srcCompat="@drawable/y2020_04_08_14_generated" />

@@ -19,10 +19,21 @@ import android.widget.RadioGroup
 
 
 class BookAppointmentActivity : AppCompatActivity() {
+    var appointmentType=""
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_book_appointment)
+        var radiogroup = findViewById<RadioGroup>(R.id.radio_group)
+        radiogroup.setOnCheckedChangeListener { radioGroup, i ->
+            appointmentType = when(i) {
+                R.id.radioButtonInperson -> "In person"
+                R.id.radioButtonVirtual -> "Virtual"
+                else -> ""
+
+            }
+        }
 
 
 
@@ -56,4 +67,6 @@ class BookAppointmentActivity : AppCompatActivity() {
 
 
     }
+
+    fun radio_button_clicked(view: android.view.View) {}
 }
