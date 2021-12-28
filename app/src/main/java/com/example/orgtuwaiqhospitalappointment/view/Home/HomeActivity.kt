@@ -7,6 +7,7 @@ import android.os.Handler
 import android.widget.ImageView
 import com.example.orgtuwaiqhospitalappointment.R
 import com.example.orgtuwaiqhospitalappointment.view.BookAppointment.BookAppointmentActivity
+import com.example.orgtuwaiqhospitalappointment.view.clinics.ClinicListActivity
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +18,7 @@ class HomeActivity : AppCompatActivity() {
         var vba= findViewById<ImageView>(R.id.imageViewViewAppointment)
 
         bna.setOnClickListener {
-            var i = Intent(this,BookAppointmentActivity::class.java)
+            var i = Intent(this,ClinicListActivity::class.java)
             startActivity(i)
         }
     }
