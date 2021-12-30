@@ -15,7 +15,7 @@
         android:layout_marginEnd="16dp"
         android:fontFamily="casual"
         android:shadowColor="#0CCCCC"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="#1DCDE4"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

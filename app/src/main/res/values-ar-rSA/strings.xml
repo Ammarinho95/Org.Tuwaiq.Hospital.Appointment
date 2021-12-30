@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hospital App</string>
+    <string name="in_person">حضوري</string>
+    <string name="virtual">Virtual</string>
+    <string name="appointment_type">Appointment Type:</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="login">تسجيل الدخول</string>
+
+
+</resources>

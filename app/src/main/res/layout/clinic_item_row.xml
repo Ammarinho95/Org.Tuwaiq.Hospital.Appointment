@@ -16,6 +16,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageViewClinicAdap"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageView
         android:id="@+id/imageViewClinicAdap"
         android:layout_width="134dp"
@@ -23,9 +24,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ans_healthcare_characters_vector_04" />
+        app:srcCompat="@drawable/flat_hospital_elements_vector" />
 </androidx.constraintlayout.widget.ConstraintLayout>

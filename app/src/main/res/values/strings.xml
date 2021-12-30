@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Hospital App</string>
+    <string name="app_name" translatable="false">Hospital App</string>
+    <string name="in_person">In Person</string>
+    <string name="virtual">Virtual</string>
+    <string name="appointment_type">Appointment Type:</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="login">Login</string>
 </resources>
