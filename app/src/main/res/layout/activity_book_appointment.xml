@@ -81,7 +81,7 @@
             android:id="@+id/textClincName1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Clinc Name" />
+            android:hint="@string/clinc_name" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -91,7 +91,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="16dp"
-        android:text="Book"
+        android:text="@string/book"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,7 +103,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="6dp"
-        android:text="Select Date"
+        android:text="@string/select_date"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/imageViewCalender"
         app:layout_constraintStart_toStartOf="parent"

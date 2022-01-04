@@ -15,7 +15,7 @@
         android:layout_marginEnd="16dp"
         android:fontFamily="casual"
         android:shadowColor="#0CCCCC"
-        android:text="@string/login"
+        android:text="login"
         android:textColor="#1DCDE4"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
             android:id="@+id/textInputEmail1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email" />
+            android:hint="@string/email" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -57,7 +57,7 @@
             android:id="@+id/textInputPassword1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password" />
+            android:hint="@string/password" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -67,7 +67,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="16dp"
-        android:text="Login"
+        android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +83,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="casual"
-        android:text="Don't have an account? Sign up now"
+        android:text="@string/don_t_have_an_account_sign_up_now"
         android:textColor="#115FEA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

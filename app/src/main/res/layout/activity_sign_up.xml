@@ -15,7 +15,7 @@
         android:layout_marginTop="62dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="casual"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         android:textColor="#0CCCCC"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,10 +35,10 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewSignUp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputEmail1"
+            android:id="@+id/inputEmail_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email" />
+            android:hint="@string/email" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -54,10 +54,10 @@
         app:layout_constraintTop_toBottomOf="@+id/inputEmail2">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputPassword1"
+            android:id="@+id/inputPassword_signUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password" />
+            android:hint="@string/password" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -76,7 +76,7 @@
             android:id="@+id/InputFullName3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Full Name" />
+            android:hint="@string/full_name" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -92,10 +92,10 @@
         app:layout_constraintTop_toBottomOf="@+id/InputFullName">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputPhone"
+            android:id="@+id/inputPhone_sign_up"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Phone" />
+            android:hint="@string/phone" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -106,7 +106,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="154dp"
         android:fontFamily="casual"
-        android:text="Sign Up"
+        android:text="@string/sign_up_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputPhone2" />

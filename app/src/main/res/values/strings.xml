@@ -1,8 +1,33 @@
 <resources>
     <string name="app_name" translatable="false">Hospital App</string>
+    <!--    Book_appointment page-->
     <string name="in_person">In Person</string>
     <string name="virtual">Virtual</string>
     <string name="appointment_type">Appointment Type:</string>
     <string name="patient_name">Patient Name</string>
+    <!--    <string name="login">Login</string>-->
+    <string name="clinc_name">Clinc Name</string>
+    <string name="book">Book</string>
+    <string name="select_date">Select Date</string>
+    <!--    Home page-->
+    <string name="book_appointment">Book Appointment</string>
+    <string name="my_appointment">My Appointment</string>
+    <string name="appointments">Appointments</string>
+    <!--    log_in Page-->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account_sign_up_now">Don\'t have an account? Sign up now</string>
     <string name="login">Login</string>
+    <!--    activity_row-->
+    <string name="appointment_type_row">Appointment Type:</string>
+    <string name="patient_name_row">Patient Name:</string>
+    <string name="clinc_name_row">Clinc Name:</string>
+    <string name="date">Date:</string>
+    <!--    sign_up page-->
+    <string name="sign_up">Sign Up</string>
+    <string name="inputEmail_signup">Email</string>
+    <string name="inputPassword_signUp">Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone">Phone</string>
+    <string name="sign_up_button">Sign Up</string>
 </resources>

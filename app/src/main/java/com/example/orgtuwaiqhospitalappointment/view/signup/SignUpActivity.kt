@@ -14,10 +14,10 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
-        var email = findViewById<TextInputEditText>(R.id.inputEmail1)
-        var password = findViewById<TextInputEditText>(R.id.inputPassword1)
+        var email = findViewById<TextInputEditText>(R.id.inputEmail_signup)
+        var password = findViewById<TextInputEditText>(R.id.inputPassword_signUp)
         var fname = findViewById<TextInputEditText>(R.id.InputFullName)
-        var phone = findViewById<TextInputEditText>(R.id.inputPhone)
+        var phone = findViewById<TextInputEditText>(R.id.inputPhone_sign_up)
         var btnsignup = findViewById<Button>(R.id.buttonsignUp)
 
         btnsignup.setOnClickListener {
