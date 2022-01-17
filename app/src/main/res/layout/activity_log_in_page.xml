@@ -15,7 +15,7 @@
         android:layout_marginEnd="16dp"
         android:fontFamily="casual"
         android:shadowColor="#0CCCCC"
-        android:text="login"
+        android:text="@string/login_page"
         android:textColor="#1DCDE4"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,5 +88,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+    <TextView
+        android:id="@+id/textViewcontactus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="Facing a problem? Contact us via Email"
+        android:textColor="#115FEA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

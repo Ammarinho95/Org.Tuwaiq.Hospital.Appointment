@@ -14,8 +14,7 @@ import com.example.orgtuwaiqhospitalappointment.view.row.rowActivity
 import com.google.android.material.textfield.TextInputEditText
 import java.util.*
 import android.widget.RadioGroup
-
-
+import com.example.orgtuwaiqhospitalappointment.view.clinics.ClinicListActivity
 
 
 class BookAppointmentActivity : AppCompatActivity() {
@@ -40,11 +39,15 @@ class BookAppointmentActivity : AppCompatActivity() {
         var inperson = findViewById<RadioButton>(R.id.radioButtonInperson)
         var virtual = findViewById<RadioButton>(R.id.radioButtonVirtual)
         var PatientName = findViewById<TextInputEditText>(R.id.textPatientName1)
-        var ClincName = findViewById<TextInputEditText>(R.id.textClincName1)
-        var btnBook = findViewById<Button>(R.id.buttonBook)
+        var btnNext = findViewById<Button>(R.id.buttonNext)
         var selectDate = findViewById<TextView>(R.id.textViewPickdate)
         var showDate= findViewById<TextView>(R.id.textViewshowDate)
         var selectDateIcon = findViewById<ImageView>(R.id.imageViewCalender)
+
+        btnNext.setOnClickListener {
+            var i = Intent(this,ClinicListActivity::class.java)
+            startActivity(i)
+        }
 
         selectDateIcon.setOnClickListener {
             val c = Calendar.getInstance()
@@ -63,6 +66,7 @@ class BookAppointmentActivity : AppCompatActivity() {
             )
             dialogDatePickerDialog.show()
         }
+
 
 
 

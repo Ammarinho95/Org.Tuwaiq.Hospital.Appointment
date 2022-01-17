@@ -3,10 +3,12 @@ package com.example.orgtuwaiqhospitalappointment.view.Login
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import com.example.orgtuwaiqhospitalappointment.R
+import com.example.orgtuwaiqhospitalappointment.view.BookAppointment.BookAppointmentActivity
 import com.example.orgtuwaiqhospitalappointment.view.Home.HomeActivity
 import com.example.orgtuwaiqhospitalappointment.view.signup.SignUpActivity
 import com.google.android.material.textfield.TextInputEditText
@@ -17,6 +19,8 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in_page)
+
+       
 
         var email = findViewById<TextInputEditText>(R.id.textInputEmail1)
         var password = findViewById<TextInputEditText>(R.id.textInputPassword1)

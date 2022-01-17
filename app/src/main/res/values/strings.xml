@@ -5,6 +5,8 @@
     <string name="virtual">Virtual</string>
     <string name="appointment_type">Appointment Type:</string>
     <string name="patient_name">Patient Name</string>
+    <string name="next">Next</string>
+
     <!--    <string name="login">Login</string>-->
     <string name="clinc_name">Clinc Name</string>
     <string name="book">Book</string>
@@ -18,6 +20,8 @@
     <string name="password">Password</string>
     <string name="don_t_have_an_account_sign_up_now">Don\'t have an account? Sign up now</string>
     <string name="login">Login</string>
+    <string name="login_page">login</string>
+
     <!--    activity_row-->
     <string name="appointment_type_row">Appointment Type:</string>
     <string name="patient_name_row">Patient Name:</string>

@@ -23,8 +23,10 @@
         android:layout_height="141dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewClinicAdap"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/flat_hospital_elements_vector" />
@@ -35,8 +37,10 @@
         android:layout_height="28dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
         android:text="Description"
         android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageViewClinicAdap"
         app:layout_constraintTop_toBottomOf="@+id/textViewClinicAdap" />
 
@@ -46,7 +50,9 @@
         android:layout_height="18dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
         android:text="Location"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageViewClinicAdap"
         app:layout_constraintTop_toBottomOf="@+id/textViewclinicDescription" />
 </androidx.constraintlayout.widget.ConstraintLayout>

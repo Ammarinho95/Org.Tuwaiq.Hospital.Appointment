@@ -2,13 +2,14 @@
 <resources>
     <string name="app_name">Hospital App</string>
     <!--    Book_appointment page-->
-    <string name="in_person">حضوري</string>
     <string name="virtual">عن بعد</string>
     <string name="appointment_type">نوع الموعد:</string>
     <string name="patient_name">اسم المراجع</string>
     <string name="clinc_name">اسم العيادة</string>
     <string name="book">حجز موعد</string>
     <string name="select_date">اختر التاريخ</string>
+    <string name="next">التالي</string>
+    <string name="in_person">حضوري</string>
     <!--    Home page-->
     <string name="book_appointment">حجز موعد</string>
     <string name="my_appointment">مواعيدي</string>
@@ -17,6 +18,8 @@
     <string name="email">البريد الالكتروني</string>
     <string name="password">كلمة المرور</string>
     <string name="login">تسجيل الدخول</string>
+    <string name="login_page">تسجيل الدخول</string>
+
     <string name="don_t_have_an_account_sign_up_now">انشاء حساب جديد</string>
     <!--    activity_row-->
     <string name="appointment_type_row">نوع الموعد:</string>

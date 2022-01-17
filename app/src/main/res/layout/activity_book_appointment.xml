@@ -68,30 +68,14 @@
             android:shadowColor="#FFFFFF" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textClincName"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        app:boxBackgroundColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPatientName">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textClincName1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/clinc_name" />
-    </com.google.android.material.textfield.TextInputLayout>
-
     <Button
-        android:id="@+id/buttonBook"
+        android:id="@+id/buttonNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/book"
+        android:text="@string/next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,12 +86,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="34dp"
         android:text="@string/select_date"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/imageViewCalender"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textClincName" />
+        app:layout_constraintTop_toBottomOf="@+id/textPatientName" />
 
     <TextView
         android:id="@+id/textViewshowDate"
@@ -124,9 +108,9 @@
         android:id="@+id/imageViewCalender"
         android:layout_width="77dp"
         android:layout_height="39dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="34dp"
         app:layout_constraintStart_toEndOf="@+id/textViewPickdate"
-        app:layout_constraintTop_toBottomOf="@+id/textClincName"
+        app:layout_constraintTop_toBottomOf="@+id/textPatientName"
         app:srcCompat="@drawable/y2020_04_08_14_generated" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,10 +10,10 @@ import retrofit2.Response
 
 class ClinicRepository {
 
-    fun getAllClinics():MutableLiveData<List<Clinic>>{
+    fun getAllClinics(): MutableLiveData<List<Clinic>> {
         var mutableLiveData = MutableLiveData<List<Clinic>>()
         var clinicService = API.getInstance().create(ClinicService::class.java)
-        clinicService.getAllClinics().enqueue(object : Callback<List<Clinic>>{
+        clinicService.getAllClinics().enqueue(object : Callback<List<Clinic>> {
             override fun onResponse(call: Call<List<Clinic>>, response: Response<List<Clinic>>) {
                 mutableLiveData.postValue(response.body())
             }

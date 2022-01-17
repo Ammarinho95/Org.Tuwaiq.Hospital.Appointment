@@ -1,5 +1,6 @@
 package com.example.orgtuwaiqhospitalappointment.view.clinics
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,6 +22,9 @@ class ClinicAdapter(var data: List<Clinic>) : RecyclerView.Adapter<ClinicViewHol
         holder.clinicDescription.text = data[position].description
         holder.cliniLocation.text = data[position].Location
         holder.itemView.setOnClickListener {
+
+
+
 
         }
     }

@@ -14,12 +14,15 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-       var bna= findViewById<ImageView>(R.id.imageViewBook)
-        var vba= findViewById<ImageView>(R.id.imageViewViewAppointment)
+        var bna = findViewById<ImageView>(R.id.imageViewBook)
+        var vba = findViewById<ImageView>(R.id.imageViewViewAppointment)
+
 
         bna.setOnClickListener {
-            var i = Intent(this,ClinicListActivity::class.java)
+            var i = Intent(this, BookAppointmentActivity::class.java)
             startActivity(i)
+
         }
+
     }
 }
