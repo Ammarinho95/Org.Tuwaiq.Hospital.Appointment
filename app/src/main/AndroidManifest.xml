@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.orgtuwaiqhospitalappointment">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,7 +13,19 @@
         android:theme="@style/Theme.OrgTuwaiqHospitalAppointment"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".view.appointmentAvailability.availability"
+            android:name=".view.call"
+            android:exported="false" />
+
+        <service
+            android:name=".network.AppointmentService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".view.AvailableAppointment.Availability"
+            android:exported="false" />
+        <activity
+            android:name=".view.searchView.ClinicSearch"
             android:exported="false" />
         <activity
             android:name=".view.clinics.ClinicListActivity"

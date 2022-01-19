@@ -4,4 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.appointmentAvailability.availability"/>
+    tools:context=".view.AvailableAppointment.Availability">
+
+
+    <ImageView
+        android:id="@+id/imageViewAppiointment"
+        android:layout_width="129dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ans_healthcare_characters_vector_04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ClinicDetails"
+        android:layout_width="107dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:text="Clinic Info"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAppiointment"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="137dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:text="select"
+        app:layout_constraintStart_toEndOf="@+id/ClinicDetails"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="194dp"
+        android:layout_height="102dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="156dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

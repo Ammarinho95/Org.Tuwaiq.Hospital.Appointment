@@ -47,6 +47,10 @@ class SignUpActivity : AppCompatActivity() {
                     }
                 }.addOnFailureListener {
                     println(it.message)
+
+
+
+
                 }
 
 

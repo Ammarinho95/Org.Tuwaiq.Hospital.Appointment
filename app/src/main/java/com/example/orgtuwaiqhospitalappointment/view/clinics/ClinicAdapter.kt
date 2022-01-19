@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.orgtuwaiqhospitalappointment.R
 import com.example.orgtuwaiqhospitalappointment.model.Clinic
-import com.squareup.picasso.Picasso
+import com.example.orgtuwaiqhospitalappointment.view.AvailableAppointment.Availability
 
 class ClinicAdapter(var data: List<Clinic>) : RecyclerView.Adapter<ClinicViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ClinicViewHolder {
@@ -18,10 +18,17 @@ class ClinicAdapter(var data: List<Clinic>) : RecyclerView.Adapter<ClinicViewHol
     }
 
     override fun onBindViewHolder(holder: ClinicViewHolder, position: Int) {
+        var context = holder.itemView.context
         holder.cliniTitle.text = data[position].name
         holder.clinicDescription.text = data[position].description
         holder.cliniLocation.text = data[position].Location
         holder.itemView.setOnClickListener {
+            var i = Intent(context, Availability::class.java)
+            i.putExtra("clinic", data[position])
+            context.startActivity(i)
+
+
+
 
 
 

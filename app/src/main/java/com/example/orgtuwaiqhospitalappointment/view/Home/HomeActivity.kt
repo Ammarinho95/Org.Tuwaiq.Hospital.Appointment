@@ -3,11 +3,9 @@ package com.example.orgtuwaiqhospitalappointment.view.Home
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.widget.ImageView
 import com.example.orgtuwaiqhospitalappointment.R
 import com.example.orgtuwaiqhospitalappointment.view.BookAppointment.BookAppointmentActivity
-import com.example.orgtuwaiqhospitalappointment.view.clinics.ClinicListActivity
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +21,7 @@ class HomeActivity : AppCompatActivity() {
             startActivity(i)
 
         }
+
 
     }
 }
