@@ -6,8 +6,11 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import com.example.orgtuwaiqhospitalappointment.R
+import com.example.orgtuwaiqhospitalappointment.Util.SharedPreference
 import com.example.orgtuwaiqhospitalappointment.view.BookAppointment.BookAppointmentActivity
 import com.example.orgtuwaiqhospitalappointment.view.Profile.ProfileActivity
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,8 +30,10 @@ class HomeActivity : AppCompatActivity() {
 
         }
         EditProfile.setOnClickListener {
-            var i = Intent(this,ProfileActivity::class.java)
-            startActivity(i)
+//            var i = Intent(this,ProfileActivity::class.java)
+//            startActivity(i)
+//            SharedPreference.saveUserId(this,Firebase.auth.currentUser?.uid!!)
+            println(SharedPreference.getUserId(this))
         }
 
 
