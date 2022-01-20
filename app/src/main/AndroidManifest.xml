@@ -13,6 +13,9 @@
         android:theme="@style/Theme.OrgTuwaiqHospitalAppointment"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".view.Profile.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.call"
             android:exported="false" />
 

@@ -39,6 +39,7 @@ class SignUpActivity : AppCompatActivity() {
                         )
                         var db = Firebase.firestore
 
+
                         db.collection("users").document(auth.currentUser?.uid.toString())
                             .set(u)
                     } else {
