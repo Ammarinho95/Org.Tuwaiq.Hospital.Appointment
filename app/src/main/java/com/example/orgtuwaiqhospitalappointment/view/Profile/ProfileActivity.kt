@@ -2,6 +2,7 @@ package com.example.orgtuwaiqhospitalappointment.view.Profile
 
 import android.content.ContentValues.TAG
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -9,6 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import com.example.orgtuwaiqhospitalappointment.R
+import com.example.orgtuwaiqhospitalappointment.Util.SharedPreference
 import com.example.orgtuwaiqhospitalappointment.model.User
 import com.example.orgtuwaiqhospitalappointment.view.Login.LoginActivity
 import com.google.firebase.auth.ktx.auth
@@ -24,15 +26,22 @@ class ProfileActivity : AppCompatActivity() {
         var auth = Firebase.auth
         val user = Firebase.auth.currentUser
 
-        var EmailAdd= findViewById<TextView>(R.id.textViewEmailAdd)
-        var fullname= findViewById<EditText>(R.id.editTextTextFullName)
-        var phone= findViewById<EditText>(R.id.editTextPhone)
-        var delbutton= findViewById<Button>(R.id.buttonDelete)
-        var update= findViewById<Button>(R.id.buttonUpdate)
+        var EmailAdd = findViewById<TextView>(R.id.textViewEmailAdd)
+        var fullname = findViewById<EditText>(R.id.editTextTextFullName)
+        var phone = findViewById<EditText>(R.id.editTextPhone)
+        var delbutton = findViewById<Button>(R.id.buttonDelete)
+        var update = findViewById<Button>(R.id.buttonUpdate)
+        var logout = findViewById<Button>(R.id.buttonLogOut)
+
 
         EmailAdd.text = auth.currentUser?.email
 
-
+        logout.setOnClickListener {
+            auth.signOut()
+            SharedPreference.saveUserId(this,"null")
+            finish()
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
 
 
 
@@ -58,13 +67,12 @@ class ProfileActivity : AppCompatActivity() {
             println("Delete is Pressed")
             auth.currentUser?.delete()
             finish()
-            startActivity(Intent(this,LoginActivity::class.java))
-
-
-
-
+            startActivity(Intent(this, LoginActivity::class.java))
 
 
         }
+
+
     }
+
 }

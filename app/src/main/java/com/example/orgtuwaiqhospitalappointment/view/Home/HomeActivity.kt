@@ -30,10 +30,10 @@ class HomeActivity : AppCompatActivity() {
 
         }
         EditProfile.setOnClickListener {
-//            var i = Intent(this,ProfileActivity::class.java)
-//            startActivity(i)
+            var i = Intent(this,ProfileActivity::class.java)
+            startActivity(i)
 //            SharedPreference.saveUserId(this,Firebase.auth.currentUser?.uid!!)
-            println(SharedPreference.getUserId(this))
+//            println(SharedPreference.getUserId(this))
         }
 
 

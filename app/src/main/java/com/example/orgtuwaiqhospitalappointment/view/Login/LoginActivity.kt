@@ -1,6 +1,7 @@
 package com.example.orgtuwaiqhospitalappointment.view.Login
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +11,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import com.example.orgtuwaiqhospitalappointment.R
+import com.example.orgtuwaiqhospitalappointment.Util.SharedPreference
 import com.example.orgtuwaiqhospitalappointment.view.BookAppointment.BookAppointmentActivity
 import com.example.orgtuwaiqhospitalappointment.view.Home.HomeActivity
 import com.example.orgtuwaiqhospitalappointment.view.signup.SignUpActivity
@@ -39,6 +41,7 @@ class LoginActivity : AppCompatActivity() {
             auth.signInWithEmailAndPassword(email.text.toString(), password.text.toString())
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
+                        SharedPreference.saveUserId(this,auth.currentUser?.uid!!)
                         var user = auth.currentUser
                         Toast.makeText(this, "Login success", Toast.LENGTH_SHORT).show()
 

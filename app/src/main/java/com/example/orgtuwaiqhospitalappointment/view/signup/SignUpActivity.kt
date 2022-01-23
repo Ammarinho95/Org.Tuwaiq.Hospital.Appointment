@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.example.orgtuwaiqhospitalappointment.R
+import com.example.orgtuwaiqhospitalappointment.Util.SharedPreference
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
@@ -28,6 +29,7 @@ class SignUpActivity : AppCompatActivity() {
                 .addOnCompleteListener { task ->
 
                     if (task.isSuccessful) {
+                        SharedPreference.saveUserId(this,auth.currentUser?.uid!!)
                         println("User has been registered successfully with UID" + auth.currentUser?.uid)
 
                         val u = hashMapOf(
